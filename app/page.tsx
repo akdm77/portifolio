@@ -4,21 +4,22 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className=" bg-gradient-to-b  from-[#2C3E50] via-[#ECF0F1] via-[#E67E22] 
-    to-[#1ABC9C] border border-8 border-[#2C3E50] ">
+    to-[#1ABC9C]  border-8 border-[#2C3E50] ">
       <div className="">
         <NavBar />
         <section
           id="about"
           className="flex flex-col h-screen text-white justify-center items-center "
         >
-          <h1 className="text-2xl m-5">Alan Klysman</h1>
-          <p className="text-xl m-5">Olá, me chamo Alan e sou um desenvolvedor</p>
+          <h1 className="text-5xl m-5">Alan Klysman</h1>
+          <p className="text-xl m-5">Oi! Me chamo Alan e sou um desenvolvedor frontend apaixonado por transformar ideias em interfaces dinâmicas e intuitivas. Adoro criar experiências fluidas e bem estruturadas, sempre buscando escrever um código limpo e eficiente. Estou constantemente explorando novas tecnologias para aprimorar minhas habilidades e entregar soluções modernas. Para mim, programar vai além do código—é resolver problemas, inovar e construir experiências incríveis para os usuários.</p>
         </section>
+        <hr className=" m-16 border-black" />
         <section
           id="techs"
           className=" flex flex-col  h-full w-full text-[#404041] justify-center items-center"
         >
-          <h1 className="text-5xl mb-5">Tecnologias</h1>
+          <h1 className="text-5xl mb-5 ">Tecnologias</h1>
           <section className="grid justify-center sm:grid-cols-3 h-full w-full md:w-screen md:p-32 gap-5 sm:p-5">
 
           <button className="flex flex-col  justify-center items-center text-xl antialiased font-bold bg-teal-500  text-blue-950  w-full rounded-lg border py-3 px-10 border-green-600">
@@ -83,7 +84,7 @@ export default function Home() {
           </button>
           </section>
         </section>
-        <hr className=" m-16"/>
+        <hr className=" m-16 border-black"/>
         <section
           id="projects"
           className="flex flex-col  text-2xl sm:h-full h-screen text-[#1981DD] items-center mb-10 "
@@ -122,6 +123,7 @@ export default function Home() {
             </section>
           </section>
         </section>
+        <hr className=" m-16 border-black"/>
         <section
           id="contact"
           className="flex flex-col gap-3 items-center text-2xl  h-screen text-violet-800 justify-center "
