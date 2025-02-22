@@ -8,9 +8,9 @@ import menu from "/public/icon-menu.svg";
 const Navbar = () => {
   const [ativo, setAtivo] = useState(false);
   const OpenPagesAndClosePages = () => {
-    setAtivo(ativo == true)
-
-    setAtivo(ativo == false)
+    if(ativo == true){
+      setAtivo(false)
+    }
   }
   return (
     <nav className="flex  fixed top-0 left-0 right-0 z-0 h-auto  bg-[#2C3E50] items-center  text-white justify-end md:h-20 lg:h-20">
@@ -35,7 +35,7 @@ const Navbar = () => {
         <ul
           className=" h-screen  md:fixed md:right-6 md:top-0 md:h-auto md:flex  md:justify-end  md:pt-3.5 md:items-start 
           flex-grow items-center justify-center w-2/3  text-center "
-          onClick={OpenPagesAndClosePages}
+           
         >
           <Link href="#about" className="w-28" onClick={OpenPagesAndClosePages}>
             <li className="pb-6 text-xl  text-white py-2 md:px-6 text-center items-center w-full justify-center 
@@ -43,10 +43,10 @@ const Navbar = () => {
               about
             </li>
           </Link>
-          <Link href="#blog" onClick={OpenPagesAndClosePages}>
+          <Link href="#techs" onClick={OpenPagesAndClosePages}>
             <li className="pb-6 text-xl text-white py-2 md:px-6 text-center items-center justify-center border-b-2 
             md:border-b-0 hover:bg-purple-600">
-              blog
+              Tecnologias
             </li>
           </Link>
           <Link href="#projects" onClick={OpenPagesAndClosePages}>
