@@ -14,6 +14,7 @@ const Navbar = () => {
   }
   return (
     <nav className="flex  fixed top-0 left-0 right-0 z-0 h-auto  bg-[#2C3E50] items-center  text-white justify-end md:h-20 lg:h-20">
+
       <Link href="/">
         <Image
           src="/AKDM logo with the name larger and in white color.png"
@@ -90,3 +91,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+   

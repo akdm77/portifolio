@@ -8,36 +8,33 @@ export default function Home() {
     to-[#1ABC9C]  border-8 border-[#2C3E50] ">
       <div className="">
         <NavBar />
-        <section className="">
-          .
-        </section>
+        
         <section
           id="about"
-          className="flex flex-col md:flex-row h-screen text-white justify-center items-center md:w-screen">
-            <section className="md:w-1/2 grid lg:flex justify-center items-center">
-
-          <section className="flex flex-col  justify-center items-center float-left">
-            <Image
-              className=" rounded-3xl shadow-2xl float-left"
-              src="/fotoAlan.png"
-              width={200}
-              height={200}
-              alt="foto-alan"
-              unoptimized
-            />
-            <h1 className="text-5xl m-5">Alan Klysman</h1>
-          </section>
-          <p className="text-xl clean-right antialiased font-sans m-5 text-justify">
-            Oi! Me chamo Alan e sou um desenvolvedor frontend apaixonado por
-            transformar ideias em interfaces dinâmicas e intuitivas. Adoro criar
-            experiências fluidas e bem estruturadas, sempre buscando escrever um
-            código limpo e eficiente. Estou constantemente explorando novas
-            tecnologias para aprimorar minhas habilidades e entregar soluções
-            modernas. Para mim, programar vai além do código—é resolver
-            problemas, inovar e construir experiências incríveis para os
-            usuários.
-          </p>
+          className="flex  md:flex-row h-screen text-white mt-10 lg:mt-0 justify-center items-center md:w-screen">
+          <section className=" grid lg:flex justify-center items-end mt-20 md:w-1/2 lg:mt-0 lg:w-8/12">
+            <section className="flex flex-col  justify-center items-center md:w-full mt-20 iphone-se-margin  float-left">
+              <Image
+                className=" rounded-3xl shadow-2xl float-left"
+                src="/fotoAlan.png"
+                width={200}
+                height={200}
+                alt="foto-alan"
+                unoptimized
+              />
+              <h1 className="text-5xl m-5">Alan Klysman</h1>
             </section>
+            <p className="text-xl  lg:w-10/12 clean-right antialiased font-sans m-5 text-justify">
+              Oi! Me chamo Alan e sou um desenvolvedor frontend apaixonado por
+              transformar ideias em interfaces dinâmicas e intuitivas. Adoro
+              criar experiências fluidas e bem estruturadas, sempre buscando
+              escrever um código limpo e eficiente. Estou constantemente
+              explorando novas tecnologias para aprimorar minhas habilidades e
+              entregar soluções modernas. Para mim, programar vai além do
+              código—é resolver problemas, inovar e construir experiências
+              incríveis para os usuários.
+            </p>
+          </section>
         </section>
         <hr className=" m-16 border-black" />
         <section
@@ -117,7 +114,7 @@ export default function Home() {
         <section
           id="projects"
           className="flex flex-col  text-2xl sm:h-full h-screen text-[#1981DD] items-center mb-10 ">
-          <h2 className="m-10">projects</h2>
+          <h2 className="m-10 text-5xl">projects</h2>
           <section className="flex flex-col md:grid md:grid-cols-2 overflow-scroll gap-5 m-5 ">
             <section className="bg-gray-600 text-white text-center rounded-md h-full w-full p-5">
               <h3 className="m-3">pagina do Google</h3>
@@ -133,7 +130,12 @@ export default function Home() {
             <section className="bg-gray-600 text-white text-center rounded-md h-full w-full p-5">
               <h3 className="m-3">Pagina de snap</h3>
               <Link href="https://snap-sable.vercel.app/">
-                <Image src="/snap.png" width={500} height={500} alt="snap" />
+                <Image
+                  src="/snap.png"
+                  width={500}
+                  height={500}
+                  alt="snap"
+                />
               </Link>
             </section>
             <section className="bg-gray-600 text-white text-center rounded-md h-full w-full p-5">
@@ -156,17 +158,50 @@ export default function Home() {
           </section>
         </section>
         <hr className=" m-16 border-black" />
-        <section
+        <footer
           id="contact"
           className="flex flex-col gap-3 items-center text-2xl  h-screen text-violet-800 justify-center ">
-          <h1>Contatos</h1>
+          <h1 className="text-5xl">Contatos</h1>
+          <section className="flex gap-3">
+            `
+            <Link href="https://www.instagram.com/klysmalan?igsh=MTk2Y3VwZG1qY2VmYw==">
+              <Image
+                src="/instagram.png"
+                width={50}
+                height={50}
+                alt="instagram"
+              />
+            </Link>
+            <span>
+              <Image
+                src="/linkedin.png"
+                width={50}
+                height={50}
+                alt="linkedin"
+              />
+            </span>
+            <span>
+              <Image
+                src="/whatsapp.png"
+                width={50}
+                height={50}
+                alt="whatsapp"
+              />
+            </span>
+            <span>
+              <Image src="/o-email.png" width={50} height={50} alt="email" />
+            </span>
+            <span>
+              <Image src="/github.png" width={50} height={50} alt="github" />
+            </span>
+          </section>
           <p>
             <span>Email:</span>alankdm77@gmail.com
           </p>
           <p>
             <span>Telefone:</span>(86)99592-8239{" "}
           </p>
-        </section>
+        </footer>
       </div>
     </main>
   );

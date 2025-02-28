@@ -22,8 +22,8 @@ export default function RootLayout({
         <Link
           rel="icon"
           type="image/png"
-          href="/AKDM.png"
-        />
+          />
+        href="7U89OI E Q^~! UTu
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
