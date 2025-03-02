@@ -41,7 +41,7 @@ const Navbar = () => {
           <Link href="#about" className="w-28" onClick={OpenPagesAndClosePages}>
             <li className="pb-6 text-xl  text-white py-2 md:px-6 text-center items-center w-full justify-center 
             border-b-2 md:border-b-0  hover:bg-purple-600">
-              about
+              About
             </li>
           </Link>
           <Link href="#techs" onClick={OpenPagesAndClosePages}>
@@ -53,13 +53,13 @@ const Navbar = () => {
           <Link href="#projects" onClick={OpenPagesAndClosePages}>
             <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 items-center justify-center 
             md:border-b-0 hover:bg-purple-600">
-              projects
+              Projetos
             </li>
           </Link>
           <Link href="#contact" onClick={OpenPagesAndClosePages}>
             <li className="pb-6 text-xl text-white py-2 md:px-6 text-center border-b-2 items-center justify-center 
             md:border-b-0 hover:bg-purple-600">
-              contact
+              Contatos
             </li>
           </Link>
         </ul>
