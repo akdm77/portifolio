@@ -11,7 +11,7 @@ export default function Home() {
         
         <section
           id="about"
-          className="flex  md:flex-row h-screen text-white mt-10 lg:mt-0 justify-center items-center md:w-screen">
+          className="flex  md:flex-row h-screen text-white mt-10 lg:mt-0 justify-center items-center ">
           <section className=" grid lg:flex justify-center items-end mt-20 md:w-1/2 lg:mt-0 lg:w-8/12">
             <section className="flex flex-col  justify-center items-center md:w-full mt-20 iphone-se-margin  float-left">
               <Image
@@ -41,7 +41,7 @@ export default function Home() {
           id="techs"
           className=" flex flex-col  h-full w-full text-[#404041] justify-center items-center">
           <h1 className="text-5xl mb-5 ">Tecnologias</h1>
-          <section className="grid justify-center sm:grid-cols-3 h-full w-full md:w-screen md:p-32 gap-5 sm:p-5">
+          <section className="grid justify-center sm:grid-cols-3 h-full w-full md:w-full md:p-32 gap-5 sm:p-5">
             <button className="flex flex-col  justify-center items-center text-xl antialiased font-bold bg-teal-500  text-blue-950  w-full rounded-lg border py-3 px-10 border-green-600">
               <Image
                 className="py-2"
@@ -172,28 +172,28 @@ export default function Home() {
                 alt="instagram"
               />
             </Link>
-            <span>
+            <Link href="https://www.linkedin.com/in/alan-klysman-8a567a23a/">
               <Image
                 src="/linkedin.png"
                 width={50}
                 height={50}
                 alt="linkedin"
               />
-            </span>
-            <span>
+            </Link>
+            <Link href="https://wa.me/5586995928239?text=Bom%20dia">
               <Image
                 src="/whatsapp.png"
                 width={50}
                 height={50}
                 alt="whatsapp"
               />
-            </span>
-            <span>
+            </Link>
+            <Link href="mailto:alankdm77@gmail.com?subject=Solicitação%20de%20Orçamento&body=Olá,%20gostaria%20de%20solicitar%20um%20orçamento%20para%20seus%20serviços.">
               <Image src="/o-email.png" width={50} height={50} alt="email" />
-            </span>
-            <span>
+            </Link>
+            <Link href="https://github.com/akdm77">
               <Image src="/github.png" width={50} height={50} alt="github" />
-            </span>
+            </Link>
           </section>
           <p>
             <span>Email:</span>alankdm77@gmail.com
