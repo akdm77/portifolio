@@ -20,10 +20,11 @@ export default function RootLayout({
     <html lang="pt-br">
       <Head>
         <Link
+          href='/AKDM logo with the name larger and in white color.png'
           rel="icon"
           type="image/png"
           />
-        href="7U89OI E Q^~! UTu
+       
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
