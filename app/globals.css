@@ -31,8 +31,4 @@ body {
     text-wrap: balance;
   }
 }
-@media(max-width: 375px){
-  .iphone-se-margin{
-    margin-top:27rem;
-  }
-}
+
